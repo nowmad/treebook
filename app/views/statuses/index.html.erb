@@ -4,7 +4,7 @@
 
 <%= link_to "Post a New Status", new_status_path, class: "btn btn-success" %>
 
-<% @statuses.each do |status| %>
+<% @statuses.reverse.each do |status| %>
   <div class="status"
     <p><%= status.user.profile_name %></p>
     <p><%= status.content %></p>
