@@ -8,6 +8,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :production do
+  gem 'pg'
+end
+
 # Use devise for authentification
 gem 'devise'
 
